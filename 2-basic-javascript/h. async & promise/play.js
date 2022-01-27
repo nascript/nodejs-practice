@@ -23,6 +23,7 @@ setTimeout(() => {
     })
     .then((text2) => {
       console.log(text2);
+      console.log(text2);
     });
 }, 2000); // disebut asyncronous karena kode tidak langsung dirender tapi menunggu waktu yg ditetapkan
 
