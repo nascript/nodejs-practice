@@ -7,3 +7,4 @@ function summarizeUser(userName, userAge, userHobbies) {
 }
 
 console.log(summarizeUser(yourName, yourAge, hasHobbies));
+console.log(summarizeUser(yourName, yourAge, hasHobbies));
