@@ -32,4 +32,4 @@ setTimeout(() => {
 // synchronous code
 console.log(`hello`);
 console.log(`nas`);
-console.log(`i am fine`);
+console.log(`i am fine nas`);
