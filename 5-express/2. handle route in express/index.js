@@ -3,14 +3,14 @@ const http = require('http');
 const express = require('express');
 const app = express();
 
-//  === middleware | berfungsi sebagai jembatan pengaturan ketika req, res
-app.use((req, res, next) => {
-  console.log('first middleware');
-  next(); // berfungsi untuk melakukan eksekusi request ke middleware selanjutnya
-});
-app.use((req, res, next) => {
+app.use('/add', (req, res, next) => {
   console.log('second middleware');
-  res.send('<h2>Hello from express bos</h2>');
+  res.send('<h2>Hello this is second routes</h2>');
+});
+
+app.use('/', (req, res, next) => {
+  console.log('first middleware');
+  res.send('<h1>Welcome to express JS</h1>');
 });
 
 const server = http.createServer(app);
