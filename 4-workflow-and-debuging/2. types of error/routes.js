@@ -19,8 +19,6 @@ const requestHandler = (req, res) => {
     const body = [];
     req.on('data', (chunk) => {
       console.log('ini chunk', chunk);
-      console.log('ini chunk', chunk);
-      console.log('ini chunk', chunk);
       body.push(chunk);
     });
 

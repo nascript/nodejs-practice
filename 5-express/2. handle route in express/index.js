@@ -11,8 +11,6 @@ app.use('/add', (req, res, next) => {
 app.use('/', (req, res, next) => {
   console.log('first middleware')
   res.send('<h1>Welcome to express JS</h1>')
-  res.send('<h1>Welcome to express JS</h1>')
-  res.send('<h1>Welcome to express JS</h1>')
 })
 
 const server = http.createServer(app)
